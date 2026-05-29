@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enquiry</title>
+    <title>tc_download</title>
     <link rel="stylesheet" href="./src/output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <!-- npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch -->
 </head>
 
 <body>
@@ -326,7 +327,6 @@
 
     </div>
 
-
     <main>
         <section class="relative isolate overflow-hidden bg-gradient-teal-slate text-white">
 
@@ -343,164 +343,105 @@
                 <span
                     class="inline-flex items-center gap-2 glass-dark rounded-full px-4 py-2 text-xs font-semibold uppercase tracking-[3px] animate-fade-up">
 
-                    <ion-icon name="school-outline" class="text-aqua text-sm">
+                    <ion-icon name="document-text-outline" class="text-aqua text-sm">
                     </ion-icon>
 
-                    Admissions Open
+                    Student Services
 
                 </span>
 
                 <h1 class="mt-5 font-display text-4xl lg:text-6xl font-bold animate-fade-up-delay-1">
 
-                    Admission Enquiry
+                    Transfer Certificate
 
                 </h1>
 
                 <p class="mt-4 max-w-2xl text-white/85 leading-relaxed animate-fade-up-delay-2">
 
-                    Tell us a little about your child and we'll get back to you
-                    with admission details, fee information and the next steps
-                    to join the Seth Chhoteylal Academy family.
+                    Enter your admission number to quickly view and
+                    download your Transfer Certificate online.
 
                 </p>
 
             </div>
 
         </section>
-        <!-- form -->
         <section class="bg-soft section-padding">
 
-            <form class="container-custom max-w-5xl space-y-8">
+            <div class="container-custom max-w-3xl">
 
-                <!-- Student Details -->
-                <div class="bg-white rounded-3xl border border-border p-6 lg:p-8">
+                <div class="bg-white rounded-3xl border border-border shadow-xl p-8 lg:p-10">
 
-                    <h2 class="font-display text-2xl font-bold text-navy">
-                        Student Details
-                    </h2>
+                    <!-- Badge -->
+                    <div
+                        class="inline-flex items-center gap-2 bg-aqua-soft text-teal rounded-full px-4 py-2 text-xs font-semibold uppercase tracking-[2px]">
 
-                    <div class="mt-6 grid gap-5 md:grid-cols-2">
+                        <ion-icon name="document-text-outline" class="text-sm">
+                        </ion-icon>
 
-                        <div>
-                            <label class="block text-sm font-medium text-navy mb-2">
-                                Student Name *
-                            </label>
-
-                            <input type="text"
-                                class="w-full rounded-xl border border-border px-4 py-3 focus:outline-none focus:ring-2 focus:ring-teal">
-                        </div>
-
-                        <div>
-                            <label class="block text-sm font-medium text-navy mb-2">
-                                Class / Grade *
-                            </label>
-
-                            <input type="text" placeholder="e.g. Class V"
-                                class="w-full rounded-xl border border-border px-4 py-3 focus:outline-none focus:ring-2 focus:ring-teal">
-                        </div>
+                        Official TC Portal
 
                     </div>
 
-                </div>
+                    <!-- Heading -->
+                    <h2 class="mt-5 font-display text-3xl font-bold text-navy">
 
-                <!-- Parent Details -->
-                <div class="bg-white rounded-3xl border border-border p-6 lg:p-8">
+                        Search Your Certificate
 
-                    <h2 class="font-display text-2xl font-bold text-navy">
-                        Parent Details
                     </h2>
 
-                    <div class="mt-6 grid gap-5 md:grid-cols-2">
+                    <p class="mt-3 text-slate-text leading-relaxed">
 
-                        <div>
-                            <label class="block text-sm font-medium text-navy mb-2">
-                                Father's Name *
-                            </label>
+                        Enter the admission number printed on your school ID
+                        card or last fee receipt.
 
-                            <input type="text"
-                                class="w-full rounded-xl border border-border px-4 py-3 focus:outline-none focus:ring-2 focus:ring-teal">
-                        </div>
+                    </p>
 
-                        <div>
-                            <label class="block text-sm font-medium text-navy mb-2">
-                                Mother's Name *
-                            </label>
+                    <!-- Form -->
+                    <form class="mt-8 grid gap-4 sm:grid-cols-[1fr_auto]">
 
-                            <input type="text"
-                                class="w-full rounded-xl border border-border px-4 py-3 focus:outline-none focus:ring-2 focus:ring-teal">
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <!-- Address -->
-                <div class="bg-white rounded-3xl border border-border p-6 lg:p-8">
-
-                    <h2 class="font-display text-2xl font-bold text-navy">
-                        Address Details
-                    </h2>
-
-                    <div class="mt-6">
-
-                        <label class="block text-sm font-medium text-navy mb-2">
-                            Address *
-                        </label>
-
-                        <input type="text"
+                        <input type="text" maxlength="20" placeholder="e.g. SCA-2024-0123"
                             class="w-full rounded-xl border border-border px-4 py-3 focus:outline-none focus:ring-2 focus:ring-teal">
 
+                        <button type="submit"
+                            class="inline-flex items-center justify-center gap-2 bg-teal text-white font-semibold rounded-xl px-6 py-3 hover:bg-teal-dark transition">
+
+                            <ion-icon name="search-outline">
+                            </ion-icon>
+
+                            View TC
+
+                        </button>
+
+                    </form>
+
+                    <!-- Note -->
+                    <div class="mt-8 text-sm text-slate-text leading-relaxed">
+
+                        <strong class="text-navy">
+                            Note:
+                        </strong>
+
+                        For lost admission numbers or any discrepancy,
+                        please contact the school office at
+
+                        <a href="tel:+918604622672" class="text-teal font-semibold hover:text-teal-dark transition">
+
+                            +91-8604622672
+
+                        </a>
+
                     </div>
 
                 </div>
 
-                <!-- Enquiry -->
-                <div class="bg-white rounded-3xl border border-border p-6 lg:p-8">
-
-                    <h2 class="font-display text-2xl font-bold text-navy">
-                        Enquiry Details
-                    </h2>
-
-                    <div class="mt-6">
-
-                        <label class="block text-sm font-medium text-navy mb-2">
-                            Purpose of Enquiry *
-                        </label>
-
-                        <select
-                            class="w-full rounded-xl border border-border px-4 py-3 focus:outline-none focus:ring-2 focus:ring-teal">
-
-                            <option>Select...</option>
-                            <option>Admission</option>
-                            <option>Fees</option>
-                            <option>Transfer</option>
-                            <option>Other</option>
-
-                        </select>
-
-                    </div>
-
-                </div>
-
-                <!-- Submit -->
-                <div class="text-center">
-
-                    <button type="submit"
-                        class="inline-flex items-center gap-2 bg-teal text-white px-8 py-4 rounded-full font-semibold hover:bg-teal-dark transition-all hover-lift">
-
-                        <ion-icon name="send-outline"></ion-icon>
-
-                        Submit Enquiry
-
-                    </button>
-
-                </div>
-
-            </form>
+            </div>
 
         </section>
-
     </main>
+
+
+
     <footer class="bg-navy text-white/90 mt-16">
         <!-- Main Footer -->
         <div class="container-custom py-14 grid gap-10 md:grid-cols-4">
@@ -639,8 +580,6 @@
             </div>
         </div>
     </footer>
-
-
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

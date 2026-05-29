@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="./src/output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 </head>
+
 <body>
     <div class="hidden md:block bg-white border-b border-border text-[12px] text-slate-text">
         <div class="container-custom py-1.5 flex items-center justify-between gap-4">
@@ -64,46 +66,61 @@
                     Student Login
                 </a>
                 <!-- Admission Button -->
-                <a href="#"
+                <a href="tc_download.html"
                     class="ml-1 inline-flex items-center rounded-full bg-teal text-white font-semibold px-3 py-1 hover:bg-teal-dark transition-all duration-300 shadow-sm">
                     TC Download
                 </a>
             </div>
         </div>
     </div>
-    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-sm shadow-sm transition-all duration-300">
-        <nav class="container-custom h-16 flex items-center justify-between gap-6 py-0">
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-sm shadow-sm">
+
+        <nav class="container-custom h-16 flex items-center justify-between py-0">
+
             <!-- Logo -->
-            <a href="#" class="flex items-center gap-2.5 shrink-0">
+            <a href="index.html" class="flex items-center gap-2.5">
+
                 <div class="h-12 w-12">
-                    <!-- Image -->
-                    <img src="assets/SCA NEW PNG2.png" alt="Seth Chhoteylal Academy logo"
+                    <img src="assets/SCA NEW PNG2.png" alt="Seth Chhoteylal Academy Logo"
                         class="h-full w-full object-contain">
                 </div>
-                <!-- Text -->
+
                 <div class="leading-tight">
-                    <div class="font-display font-bold text-navy text-[13px] sm:text-sm">
+
+                    <h2 class="font-display font-bold text-navy text-[13px] sm:text-sm">
+
                         Seth Chhoteylal Academy
-                    </div>
-                    <div class="text-[10px] text-slate-text hidden sm:block">
+
+                    </h2>
+
+                    <p class="hidden sm:block text-[10px] text-slate-text">
+
                         Senior Secondary School Affiliated to CBSE, Delhi
-                    </div>
+
+                    </p>
+
                 </div>
+
             </a>
+
             <!-- Desktop Menu -->
-            <ul class="hidden lg:flex items-center gap-1 flex-1 justify-center whitespace-nowrap">
-                <!-- Active Link -->
+            <ul class="hidden lg:flex items-center gap-1">
+
                 <li>
-                    <a href="#"
-                        class="px-3 py-2 text-[13px] font-semibold text-teal rounded-md transition-all duration-300">
+                    <a href="index.html" class="px-3 py-2 text-teal font-semibold">
                         Home
                     </a>
                 </li>
-                <!-- Links -->
+
                 <li>
-                    <a href="#"
-                        class="px-3 py-2 text-[13px] font-medium text-slate-text hover:text-teal rounded-md transition-all duration-300">
+                    <a href="about.html" class="px-3 py-2 text-slate-text hover:text-teal transition">
                         About
+                    </a>
+                </li>
+
+                <li>
+                    <a href="enquiry.html" class="px-3 py-2 text-slate-text hover:text-teal transition">
+                        Enquiry
                     </a>
                 </li>
                 <!-- Dropdown -->
@@ -115,33 +132,199 @@
                         </ion-icon>
                     </button>
                 </li>
+
                 <li>
-                    <a href="#"
-                        class="px-3 py-2 text-[13px] font-medium text-slate-text hover:text-teal rounded-md transition-all duration-300">
-                        Enquiry
-                    </a>
-                </li>
-                <li>
-                    <a href="#"
-                        class="px-3 py-2 text-[13px] font-medium text-slate-text hover:text-teal rounded-md transition-all duration-300">
+                    <a href="contact.html" class="px-3 py-2 text-slate-text hover:text-teal transition">
                         Contact
                     </a>
                 </li>
+
             </ul>
-            <!-- Right Button -->
-            <div class="hidden lg:flex items-center shrink-0">
-                <a href="#"
-                    class="inline-flex items-center gap-1.5 bg-teal text-white font-semibold rounded-full px-4 py-2 text-[13px] hover:bg-teal-dark transition-all duration-300 shadow-md shadow-teal/20">
-                    Admission open
-                </a>
-            </div>
+
+            <!-- Desktop CTA -->
+            <a href="enquiry.html"
+                class="hidden lg:inline-flex bg-teal text-white px-4 py-2 rounded-full font-semibold hover:bg-teal-dark transition">
+
+                Admission Open
+
+            </a>
+
             <!-- Mobile Menu Button -->
-            <button class="lg:hidden p-2 text-navy">
-                <ion-icon name="menu-outline" class="text-3xl">
+            <button id="menuBtn" class="lg:hidden">
+
+                <ion-icon name="menu-outline" class="text-3xl text-navy">
                 </ion-icon>
+
             </button>
+
         </nav>
+
     </header>
+
+    <!-- Overlay -->
+    <div id="menuOverlay" class="fixed inset-0 bg-black/50 z-40 hidden">
+    </div>
+
+    <!-- Offcanvas -->
+    <div id="mobileMenu" class="fixed top-0 right-0 h-screen w-full bg-white z-50
+           -translate-y-full transition-transform duration-300
+           shadow-2xl overflow-y-auto">
+
+        <!-- Header -->
+        <div class="flex items-center justify-between p-4 border-b border-border">
+
+            <h2 class="font-display text-xl font-bold text-navy">
+
+                Menu
+
+            </h2>
+
+            <button id="closeBtn">
+
+                <ion-icon name="close-outline" class="text-3xl text-navy">
+                </ion-icon>
+
+            </button>
+
+        </div>
+
+        <!-- Menu Links -->
+        <ul class="px-4 py-3 space-y-1">
+
+            <li>
+                <a href="index.html" class="block px-3 py-3 rounded-xl text-sm font-semibold text-teal bg-aqua-soft">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="about.html"
+                    class="block px-3 py-3 rounded-xl text-sm font-medium text-navy hover:bg-aqua-soft hover:text-teal transition">
+                    About
+                </a>
+            </li>
+
+
+
+            <!-- MPD Dropdown -->
+            <li>
+
+                <details class="group">
+
+                    <summary
+                        class="flex items-center justify-between cursor-pointer px-3 py-3 rounded-xl text-sm font-medium text-navy hover:bg-aqua-soft hover:text-teal transition">
+
+                        MPD
+
+                        <ion-icon name="chevron-down-outline"
+                            class="text-base transition-transform group-open:rotate-180">
+                        </ion-icon>
+
+                    </summary>
+
+                    <div class="mt-2 ml-3 space-y-1">
+
+                        <a href="fee-structure.html"
+                            class="block px-3 py-2 rounded-lg text-sm text-slate-text hover:bg-aqua-soft hover:text-teal">
+                            Fee Structure
+                        </a>
+
+                        <a href="academic-calendar.html"
+                            class="block px-3 py-2 rounded-lg text-sm text-slate-text hover:bg-aqua-soft hover:text-teal">
+                            Academic Calendar
+                        </a>
+
+                        <a href="fire-safety.html"
+                            class="block px-3 py-2 rounded-lg text-sm text-slate-text hover:bg-aqua-soft hover:text-teal">
+                            Fire Safety
+                        </a>
+
+                        <a href="building-safety.html"
+                            class="block px-3 py-2 rounded-lg text-sm text-slate-text hover:bg-aqua-soft hover:text-teal">
+                            Building Safety
+                        </a>
+
+                        <a href="trust-deed.html"
+                            class="block px-3 py-2 rounded-lg text-sm text-slate-text hover:bg-aqua-soft hover:text-teal">
+                            Trust Deed
+                        </a>
+
+                        <a href="smc.html"
+                            class="block px-3 py-2 rounded-lg text-sm text-slate-text hover:bg-aqua-soft hover:text-teal">
+                            SMC
+                        </a>
+
+                        <a href="tc-download.html"
+                            class="block px-3 py-2 rounded-lg text-sm text-slate-text hover:bg-aqua-soft hover:text-teal">
+                            TC Download
+                        </a>
+
+                        <a href="water-analysis.html"
+                            class="block px-3 py-2 rounded-lg text-sm text-slate-text hover:bg-aqua-soft hover:text-teal">
+                            Water Analysis
+                        </a>
+
+                        <a href="certificates.html"
+                            class="block px-3 py-2 rounded-lg text-sm text-slate-text hover:bg-aqua-soft hover:text-teal">
+                            Certificates
+                        </a>
+
+                    </div>
+
+                </details>
+
+            </li>
+
+            <li>
+                <a href="enquiry.html"
+                    class="block px-3 py-3 rounded-xl text-sm font-medium text-navy hover:bg-aqua-soft hover:text-teal transition">
+                    Enquiry
+                </a>
+            </li>
+
+            <li>
+                <a href="contact.html"
+                    class="block px-3 py-3 rounded-xl text-sm font-medium text-navy hover:bg-aqua-soft hover:text-teal transition">
+                    Contact
+                </a>
+            </li>
+
+            <!-- Login Buttons -->
+            <li class="grid grid-cols-2 gap-3 pt-3">
+
+                <a href="teacher-login.html"
+                    class="text-center border border-border rounded-full px-4 py-2.5 text-sm font-medium text-slate-text hover:text-teal transition">
+
+                    Teacher Login
+
+                </a>
+
+                <a href="student-login.html"
+                    class="text-center border border-border rounded-full px-4 py-2.5 text-sm font-medium text-slate-text hover:text-teal transition">
+
+                    Student Login
+
+                </a>
+
+            </li>
+
+            <!-- CTA -->
+            <li class="pt-3">
+
+                <a href="tc_download.html"
+                    class="block text-center bg-teal text-white font-semibold rounded-full px-4 py-3 hover:bg-teal-dark transition">
+
+                    TC Download
+
+                </a>
+
+            </li>
+
+        </ul>
+
+
+
+    </div>
     <main>
         <section class="relative isolate overflow-hidden bg-gradient-teal-slate text-white">
             <!-- Decorative Blobs -->
@@ -416,5 +599,7 @@
     </footer>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="js/index.js"></script>
 </body>
+
 </html>

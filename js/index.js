@@ -1,32 +1,17 @@
-const counters = document.querySelectorAll(".counter");
-const section = document.querySelector("#stats-section");
-let started = false;
-const startCounter = () => {
-    if (started) return;
-    started = true;
-    counters.forEach(counter => {
-        const target = +counter.getAttribute("data-target");
-        let count = 0;
-        const increment = target / 100;
-        const updateCounter = () => {
-            count += increment;
-            if (count < target) {
-                counter.innerText = Math.floor(count).toLocaleString();
-                requestAnimationFrame(updateCounter);
-            } else {
-                counter.innerText = target.toLocaleString();
-            }
-        };
-        updateCounter();
-    });
-};
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            startCounter();
-        }
-    });
-}, {
-    threshold: 0.4
+const menuBtn = document.getElementById("menuBtn");
+const closeBtn = document.getElementById("closeBtn");
+const mobileMenu = document.getElementById("mobileMenu");
+const overlay = document.getElementById("menuOverlay");
+
+menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.remove("-translate-y-full");
+    overlay.classList.remove("hidden");
 });
-observer.observe(section);
+
+function closeMenu() {
+    mobileMenu.classList.add("-translate-y-full");
+    overlay.classList.add("hidden");
+}
+
+closeBtn.addEventListener("click", closeMenu);
+overlay.addEventListener("click", closeMenu);
