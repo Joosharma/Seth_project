@@ -9,6 +9,7 @@
     <title>Seth Chhoteylal Academy</title>
     <link rel="stylesheet" href="./src/output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch -->
 </head>
 
@@ -22,7 +23,7 @@
                     class="flex items-center gap-1.5 hover:text-teal transition-all duration-300">
                     <ion-icon name="call-outline" class="text-teal text-sm">
                     </ion-icon>
-                    +91-8604622672
+                    +91-8354939456
                 </a>
                 <!-- Email -->
                 <a href="mailto:principal.scarath@gmail.com"
@@ -263,7 +264,7 @@
                 style="animation-delay: 1.5s;">
             </div>
             <!-- Content -->
-            <div class="relative container-custom py-20 lg:py-32 grid gap-10 lg:grid-cols-[1.4fr_1fr] items-center">
+            <div class="relative container-custom py-20 lg:py-32 grid gap-8 lg:grid-cols-[5fr_5fr] items-center">
                 <!-- Left Side -->
                 <div class="text-white">
                     <!-- Badge -->
@@ -275,7 +276,7 @@
                     </p>
                     <!-- Heading -->
                     <h1
-                        class="mt-5 font-display text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.05] animate-fade-up-delay-1">
+                        class="mt-5 font-display text-4xl sm:text-3xl lg:text-5xl font-bold leading-[1.05] animate-fade-up-delay-1">
                         Where every child
                         <span class="text-aqua">discovers</span>
                         their potential.
@@ -304,54 +305,175 @@
                     </div>
                 </div>
                 <!-- Right Side Form -->
-                <div class="justify-self-center lg:justify-self-end w-full max-w-sm">
-                    <div class="glass rounded-3xl p-6 shadow-2xl w-full animate-fade-up-delay-2">
-                        <!-- Heading -->
-                        <h3 class="mt-1 font-display text-xl font-bold text-navy">
-                            Quick Enquiry
-                        </h3>
-                        <!-- Form -->
-                        <form class="mt-4 space-y-3">
-                            <!-- Input -->
-                            <input type="text" placeholder="Parent / Student name /Teacher name"
-                                class="w-full rounded-xl border border-border bg-white/80 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-teal/50">
-                            <!-- Input -->
-                            <input type="text" placeholder="Mobile number"
-                                class="w-full rounded-xl border border-border bg-white/80 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-teal/50">
-                            <!-- Select -->
-                            <select
-                                class="w-full rounded-xl border border-border bg-white/80 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-teal/50">
-                                <option selected disabled>
-                                    Class interested in…
-                                </option>
-                                <option>Nursery</option>
-                                <option>LKG</option>
-                                <option>UKG</option>
-                                <option>I</option>
-                                <option>II</option>
-                                <option>III</option>
-                                <option>IV</option>
-                                <option>V</option>
-                                <option>VI</option>
-                                <option>VII</option>
-                                <option>VIII</option>
-                                <option>IX</option>
-                                <option>X</option>
-                                <option>XI</option>
-                                <option>XII</option>
-                            </select>
-                            <!-- Submit -->
-                            <button type="submit"
-                                class="w-full inline-flex items-center justify-center gap-2 bg-teal text-white font-semibold rounded-xl px-4 py-3 hover:bg-teal-dark transition-all duration-300 shadow-md shadow-teal/30">
-                                Request Callback
-                                <ion-icon name="arrow-forward-outline" class="text-lg">
+                <div class="grid lg:grid-cols-2 gap-6 justify-items-center">
+                    <div class="justify-self-center lg:justify-self-end w-full max-w-sm">
+                        <div class="glass rounded-3xl p-6 shadow-2xl w-full h-full animate-fade-up-delay-2">
+                            <!-- Heading -->
+                            <h3 class="mt-1 font-display text-xl font-bold text-navy">
+                                Quick Enquiry
+                            </h3>
+                            <!-- Form -->
+                            <form class="mt-4 space-y-3">
+                                <!-- Input -->
+                                <input type="text" placeholder="Parent / Student name /Teacher name"
+                                    class="w-full rounded-xl border border-border bg-white/80 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-teal/50">
+                                <!-- Input -->
+                                <input type="text" placeholder="Mobile number"
+                                    class="w-full rounded-xl border border-border bg-white/80 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-teal/50">
+                                <!-- Select -->
+                                <select
+                                    class="w-full rounded-xl border border-border bg-white/80 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-teal/50">
+                                    <option selected disabled>
+                                        Class interested in…
+                                    </option>
+                                    <option>Nursery</option>
+                                    <option>LKG</option>
+                                    <option>UKG</option>
+                                    <option>I</option>
+                                    <option>II</option>
+                                    <option>III</option>
+                                    <option>IV</option>
+                                    <option>V</option>
+                                    <option>VI</option>
+                                    <option>VII</option>
+                                    <option>VIII</option>
+                                    <option>IX</option>
+                                    <option>X</option>
+                                    <option>XI</option>
+                                    <option>XII</option>
+                                </select>
+                                <!-- Submit -->
+                                <button type="submit"
+                                    class="w-full inline-flex items-center justify-center gap-2 bg-teal text-white font-semibold rounded-xl px-4 py-3 hover:bg-teal-dark transition-all duration-300 shadow-md shadow-teal/30">
+                                    Request Callback
+                                    <ion-icon name="arrow-forward-outline" class="text-lg">
+                                    </ion-icon>
+                                </button>
+                            </form>
+                            <!-- Bottom Text -->
+                            <p class="mt-3 text-[11px] text-slate-text text-center">
+                                We respond within 24 hours · No spam, ever.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- notification -->
+                    <div class="justify-self-center lg:justify-self-end w-full max-w-sm">
+                        <div class="glass rounded-3xl p-5 shadow-2xl w-full animate-fade-up-delay-3 h-full"
+                            role="region" aria-label="Latest News and Notifications">
+                            <!-- Header -->
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <span
+                                        class="relative inline-flex h-8 w-8 items-center justify-center rounded-full bg-teal text-white">
+                                        <ion-icon name="megaphone-outline" class="text-base">
+                                        </ion-icon>
+                                        <span
+                                            class="absolute -top-0.5 -right-0.5 h-2.5 w-2.5 rounded-full bg-aqua animate-pulse">
+                                        </span>
+                                    </span>
+                                    <h3 class="font-display font-bold text-navy text-sm">
+                                        Latest News
+                                    </h3>
+                                </div>
+                                <!-- Navigation -->
+                                <div class="flex items-center gap-1">
+                                    <button aria-label="Previous News"
+                                        class="news-prev h-7 w-7 inline-flex items-center justify-center rounded-full bg-white/70 hover:bg-white text-navy transition-all duration-300">
+                                        <ion-icon name="chevron-up-outline" class="text-sm">
+                                        </ion-icon>
+                                    </button>
+                                    <button aria-label="Next News"
+                                        class="news-next h-7 w-7 inline-flex items-center justify-center rounded-full bg-white/70 hover:bg-white text-navy transition-all duration-300">
+                                        <ion-icon name="chevron-down-outline" class="text-sm">
+                                        </ion-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- News List -->
+                            <div aria-live="polite" class="swiper newsSwiper h-[220px] mt-4 space-y-2 overflow-hidden">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div
+                                            class="flex items-start gap-3 rounded-xl bg-white/70 hover:bg-white p-2 transition-all duration-300">
+                                            <div
+                                                class="shrink-0 rounded-lg bg-teal text-white text-[10px] font-semibold leading-tight px-2 py-1.5 text-center min-w-[44px]">
+                                                Mar 02
+                                            </div>
+                                            <div class="min-w-0">
+                                                <span
+                                                    class="inline-block text-[10px] uppercase tracking-wider font-semibold text-teal mb-0.5">
+                                                    Meeting
+                                                </span>
+                                                <p class="text-xs text-navy font-medium leading-snug">
+                                                    Parent–Teacher Meet Scheduled
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div
+                                            class="flex items-start gap-3 rounded-xl bg-white/70 hover:bg-white p-2 transition-all duration-300">
+                                            <div
+                                                class="shrink-0 rounded-lg bg-teal text-white text-[10px] font-semibold leading-tight px-2 py-1.5 text-center min-w-[44px]">
+                                                Feb 22
+                                            </div>
+                                            <div class="min-w-0">
+                                                <span
+                                                    class="inline-block text-[10px] uppercase tracking-wider font-semibold text-teal mb-0.5">
+                                                    Achievement
+                                                </span>
+                                                <p class="text-xs text-navy font-medium leading-snug">
+                                                    CBSE Board Toppers Felicitated
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div
+                                            class="flex items-start gap-3 rounded-xl bg-white/70 hover:bg-white p-2 transition-all duration-300">
+                                            <div
+                                                class="shrink-0 rounded-lg bg-teal text-white text-[10px] font-semibold leading-tight px-2 py-1.5 text-center min-w-[44px]">
+                                                May 20
+                                            </div>
+                                            <div class="min-w-0">
+                                                <span
+                                                    class="inline-block text-[10px] uppercase tracking-wider font-semibold text-teal mb-0.5">
+                                                    Admission
+                                                </span>
+                                                <p class="text-xs text-navy font-medium leading-snug">
+                                                    Admissions Open for Session 2026–27
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div
+                                            class="flex items-start gap-3 rounded-xl bg-white/70 hover:bg-white p-2 transition-all duration-300">
+                                            <div
+                                                class="shrink-0 rounded-lg bg-teal text-white text-[10px] font-semibold leading-tight px-2 py-1.5 text-center min-w-[44px]">
+                                                Mar 02
+                                            </div>
+                                            <div class="min-w-0">
+                                                <span
+                                                    class="inline-block text-[10px] uppercase tracking-wider font-semibold text-teal mb-0.5">
+                                                    Meeting
+                                                </span>
+                                                <p class="text-xs text-navy font-medium leading-snug">
+                                                    Parent–Teacher Meet Scheduled
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Button -->
+                            <a href="mpd.html"
+                                class="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-navy text-white text-xs font-semibold px-4 py-2.5 hover:bg-navy-dark transition-all duration-300">
+                                View All News
+                                <ion-icon name="arrow-forward-outline" class="text-sm">
                                 </ion-icon>
-                            </button>
-                        </form>
-                        <!-- Bottom Text -->
-                        <p class="mt-3 text-[11px] text-slate-text text-center">
-                            We respond within 24 hours · No spam, ever.
-                        </p>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -380,7 +502,7 @@
                     <!-- Feature Cards -->
                     <div class="mt-7 grid sm:grid-cols-2 gap-4">
                         <!-- Card 1 -->
-                        <div class="bg-white rounded-3xl border-t-4 border-t-teal shadow-md p-5 hover-lift">
+                        <div class="bg-white rounded-3xl border-t-4 border-t-[#0f766e] shadow-md p-5 hover-lift">
                             <!-- Icon -->
                             <ion-icon name="ribbon-outline" class="text-teal text-3xl">
                             </ion-icon>
@@ -394,7 +516,7 @@
                             </p>
                         </div>
                         <!-- Card 2 -->
-                        <div class="bg-white rounded-3xl border-t-4 border-t-teal shadow-md p-5 hover-lift">
+                        <div class="bg-white rounded-3xl border-t-4 border-t-[#0f766e] shadow-md p-5 hover-lift">
                             <ion-icon name="people-outline" class="text-teal text-3xl">
                             </ion-icon>
                             <div class="mt-2 font-display font-semibold text-navy">
@@ -573,7 +695,7 @@
             </div>
         </section>
         <!-- number section -->
-        <section class="relative bg-gradient-teal-slate section-padding overflow-hidden">
+        <section id="statsSection" class="relative bg-gradient-teal-slate section-padding overflow-hidden">
             <!-- Pattern Overlay -->
             <div class="absolute inset-0 opacity-20">
                 <div class="absolute inset-0" style="
@@ -589,7 +711,7 @@
                 <!-- Stat 1 -->
                 <div class="text-center">
                     <h2 class="font-display text-4xl lg:text-5xl font-bold text-white">
-                        <span class="counter">1200</span>
+                        <span class="counter" data-target="1200">0</span>
                         <span class="text-aqua">+</span>
                     </h2>
                     <p class="mt-3 text-sm text-white/80 uppercase tracking-[3px]">
@@ -599,7 +721,7 @@
                 <!-- Stat 2 -->
                 <div class="text-center">
                     <h2 class="font-display text-4xl lg:text-5xl font-bold text-white">
-                        60
+                        <span class="counter" data-target="60">0</span>
                         <span class="text-aqua">+</span>
                     </h2>
                     <p class="mt-3 text-sm text-white/80 uppercase tracking-[3px]">
@@ -609,7 +731,7 @@
                 <!-- Stat 3 -->
                 <div class="text-center">
                     <h2 class="font-display text-4xl lg:text-5xl font-bold text-white">
-                        150
+                        <span class="counter" data-target="150">0</span>
                         <span class="text-aqua">+</span>
                     </h2>
                     <p class="mt-3 text-sm text-white/80 uppercase tracking-[3px]">
@@ -619,7 +741,7 @@
                 <!-- Stat 4 -->
                 <div class="text-center">
                     <h2 class="font-display text-4xl lg:text-5xl font-bold text-white">
-                        5
+                        <span class="counter" data-target="5">0</span>
                         <span class="text-aqua">Acres</span>
                     </h2>
                     <p class="mt-3 text-sm text-white/80 uppercase tracking-[3px]">
@@ -890,76 +1012,96 @@
                     What parents & students say.
                 </h2>
                 <!-- Testimonial Slider -->
-                <div class="mt-12 relative h-56">
-                    <!-- Active Testimonial -->
-                    <div class="absolute inset-0 transition-all duration-700 opacity-100 translate-y-0">
-                        <div class="glass-dark rounded-3xl p-8 max-w-2xl mx-auto">
-                            <!-- Quote Icon -->
-                            <!-- <ion-icon name="chatbubble-ellipses-outline" class="text-aqua text-5xl mx-auto">
+                <div class="mt-12 relative h-80">
+                    <div class="swiper testimonialSwiper h-80">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="absolute inset-0 transition-all duration-700 opacity-100 translate-y-0">
+                                    <!-- card 1 -->
+                                    <div class="glass-dark rounded-3xl p-8 max-w-2xl mx-auto">
+                                        <!-- Quote Icon -->
+                                        <i class="fa-solid fa-quote-right text-aqua text-5xl mx-auto"></i>
+                                        <!-- Text -->
+                                        <p class="mt-4 text-white/95 text-lg leading-relaxed italic">
+                                            "The teachers genuinely care. My daughter has grown more confident and
+                                            curious
+                                            within a
+                                            single year."
+                                        </p>
+                                        <!-- Author -->
+                                        <div class="mt-5 font-display font-bold text-white">
+                                            Mrs. Anjali Sharma
+                                        </div>
+                                        <div class="text-aqua text-sm">
+                                            Parent — Class VII
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="absolute inset-0 transition-all duration-700 opacity-100 translate-y-0">
+                                    <!-- card 1 -->
+                                    <div class="glass-dark rounded-3xl p-8 max-w-2xl mx-auto">
+                                        <!-- Quote Icon -->
+                                        <!-- <ion-icon name="chatbubble-ellipses-outline" class="text-aqua text-5xl mx-auto">
                             </ion-icon> -->
-                            <i class="fa-solid fa-quote-right text-aqua text-5xl mx-auto"></i>
-                            <!-- Text -->
-                            <p class="mt-4 text-white/95 text-lg leading-relaxed italic">
-                                "The teachers genuinely care. My daughter has grown more confident and curious within a
-                                single year."
-                            </p>
-                            <!-- Author -->
-                            <div class="mt-5 font-display font-bold text-white">
-                                Mrs. Anjali Sharma
+                                        <i class="fa-solid fa-quote-right text-aqua text-5xl mx-auto"></i>
+                                        <!-- Text -->
+                                        <p class="mt-4 text-white/95 text-lg leading-relaxed italic">
+                                            "The teachers genuinely care. My daughter has grown more confident and
+                                            curious
+                                            within a
+                                            single year."
+                                        </p>
+                                        <!-- Author -->
+                                        <div class="mt-5 font-display font-bold text-white">
+                                            Mrs. Anjali Sharma
+                                        </div>
+                                        <div class="text-aqua text-sm">
+                                            Parent — Class VII
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="text-aqua text-sm">
-                                Parent — Class VII
+                            <div class="swiper-slide">
+                                <div class="absolute inset-0 transition-all duration-700 opacity-100 translate-y-0">
+                                    <!-- card 1 -->
+                                    <div class="glass-dark rounded-3xl p-8 max-w-2xl mx-auto">
+                                        <!-- Quote Icon -->
+                                        <!-- <ion-icon name="chatbubble-ellipses-outline" class="text-aqua text-5xl mx-auto">
+                            </ion-icon> -->
+                                        <i class="fa-solid fa-quote-right text-aqua text-5xl mx-auto"></i>
+                                        <!-- Text -->
+                                        <p class="mt-4 text-white/95 text-lg leading-relaxed italic">
+                                            "The teachers genuinely care. My daughter has grown more confident and
+                                            curious
+                                            within a
+                                            single year."
+                                        </p>
+                                        <!-- Author -->
+                                        <div class="mt-5 font-display font-bold text-white">
+                                            Mrs. Anjali Sharma
+                                        </div>
+                                        <div class="text-aqua text-sm">
+                                            Parent — Class VII
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <!-- Hidden Testimonial -->
-                    <div
-                        class="absolute inset-0 transition-all duration-700 opacity-0 translate-y-4 pointer-events-none">
-                        <div class="glass-dark rounded-3xl p-8 max-w-2xl mx-auto">
-                            <ion-icon name="chatbubble-ellipses-outline" class="text-aqua text-5xl mx-auto">
-                            </ion-icon>
-                            <p class="mt-4 text-white/95 text-lg leading-relaxed italic">
-                                "SCA gave me a strong academic base and the discipline I needed for competitive exams."
-                            </p>
-                            <div class="mt-5 font-display font-bold text-white">
-                                Rahul Yadav
-                            </div>
-                            <div class="text-aqua text-sm">
-                                Alumnus, 2024 Batch
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Hidden Testimonial -->
-                    <div
-                        class="absolute inset-0 transition-all duration-700 opacity-0 translate-y-4 pointer-events-none">
-                        <div class="glass-dark rounded-3xl p-8 max-w-2xl mx-auto">
-                            <ion-icon name="chatbubble-ellipses-outline" class="text-aqua text-5xl mx-auto">
-                            </ion-icon>
-                            <p class="mt-4 text-white/95 text-lg leading-relaxed italic">
-                                "Smart classes, well-equipped labs and regular updates from school — exactly what
-                                parents look for."
-                            </p>
-                            <div class="mt-5 font-display font-bold text-white">
-                                Mr. Ramesh Gupta
-                            </div>
-                            <div class="text-aqua text-sm">
-                                Parent — Class X
-                            </div>
-                        </div>
+                    <!-- Dots -->
+                    <div class="mt-15 flex justify-center gap-2">
+                        <!-- Active -->
+                        <button class="h-2 w-8 rounded-full bg-aqua transition-all duration-300">
+                        </button>
+                        <!-- Inactive -->
+                        <button class="h-2 w-2 rounded-full bg-white/40 hover:bg-white/70 transition-all duration-300">
+                        </button>
+                        <button class="h-2 w-2 rounded-full bg-white/40 hover:bg-white/70 transition-all duration-300">
+                        </button>
                     </div>
                 </div>
-                <!-- Dots -->
-                <div class="mt-10 flex justify-center gap-2">
-                    <!-- Active -->
-                    <button class="h-2 w-8 rounded-full bg-aqua transition-all duration-300">
-                    </button>
-                    <!-- Inactive -->
-                    <button class="h-2 w-2 rounded-full bg-white/40 hover:bg-white/70 transition-all duration-300">
-                    </button>
-                    <button class="h-2 w-2 rounded-full bg-white/40 hover:bg-white/70 transition-all duration-300">
-                    </button>
-                </div>
-            </div>
         </section>
         <!-- have question -->
         <section class="bg-white section-padding">
@@ -1112,11 +1254,8 @@
                     <!-- Contact Button -->
                     <a href="https://wa.me/918354939456?text=Hello%20I%20want%20admission%20information" target="_blank"
                         class="inline-flex items-center gap-2 bg-green-500 text-white border border-green-500 rounded-full px-6 py-3 hover:bg-green-600 transition-all duration-300 font-semibold">
-
                         <ion-icon name="logo-whatsapp" class="text-lg"></ion-icon>
-
                         WhatsApp
-
                     </a>
                 </div>
             </div>
@@ -1259,6 +1398,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="js/index.js"></script>
