@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enquiry</title>
+    <title>teacher login</title>
     <link rel="stylesheet" href="./src/output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 </head>
-
 <body>
-     <div class="hidden md:block bg-white border-b border-border text-[12px] text-slate-text">
+    <div class="hidden md:block bg-white border-b border-border text-[12px] text-slate-text">
         <div class="container-custom py-1.5 flex items-center justify-between gap-4">
             <!-- Left Side -->
             <div class="flex items-center gap-5">
@@ -74,50 +72,34 @@
         </div>
     </div>
     <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-sm shadow-sm">
-
         <nav class="container-custom h-16 flex items-center justify-between py-0">
-
             <!-- Logo -->
             <a href="index.html" class="flex items-center gap-2.5">
-
                 <div class="h-12 w-12">
                     <img src="assets/SCA NEW PNG2.png" alt="Seth Chhoteylal Academy Logo"
                         class="h-full w-full object-contain">
                 </div>
-
                 <div class="leading-tight">
-
                     <h2 class="font-display font-bold text-navy text-[13px] sm:text-sm">
-
                         Seth Chhoteylal Academy
-
                     </h2>
-
                     <p class="hidden sm:block text-[10px] text-slate-text">
-
                         Senior Secondary School Affiliated to CBSE, Delhi
-
                     </p>
-
                 </div>
-
             </a>
-
             <!-- Desktop Menu -->
             <ul class="hidden lg:flex items-center gap-1">
-
                 <li>
                     <a href="index.html" class="px-3 py-2 text-teal font-semibold">
                         Home
                     </a>
                 </li>
-
                 <li>
                     <a href="about.html" class="px-3 py-2 text-slate-text hover:text-teal transition">
                         About
                     </a>
                 </li>
-
                 <li>
                     <a href="enquiry.html" class="px-3 py-2 text-slate-text hover:text-teal transition">
                         Enquiry
@@ -132,39 +114,27 @@
                         </ion-icon>
                     </button>
                 </li>
-
                 <li>
                     <a href="contact.html" class="px-3 py-2 text-slate-text hover:text-teal transition">
                         Contact
                     </a>
                 </li>
-
             </ul>
-
             <!-- Desktop CTA -->
             <a href="enquiry.html"
                 class="hidden lg:inline-flex bg-teal text-white px-4 py-2 rounded-full font-semibold hover:bg-teal-dark transition">
-
                 Admission Open
-
             </a>
-
             <!-- Mobile Menu Button -->
             <button id="menuBtn" class="lg:hidden">
-
                 <ion-icon name="menu-outline" class="text-3xl text-navy">
                 </ion-icon>
-
             </button>
-
         </nav>
-
     </header>
-
     <!-- Overlay -->
     <div id="menuOverlay" class="fixed inset-0 bg-black/50 z-40 hidden">
     </div>
-
     <!-- Offcanvas -->
     <div id="mobileMenu" class="fixed top-0 right-0 h-screen w-full bg-white z-50
            -translate-y-full transition-transform duration-300
@@ -274,181 +244,58 @@
             </li>
         </ul>
     </div>
-
-
-    <main>
-        <section class="relative isolate overflow-hidden bg-gradient-teal-slate text-white">
-
+        <section class="relative bg-gradient-teal-slate section-padding overflow-hidden">
             <!-- Decorative Blobs -->
             <div class="absolute -top-24 -right-24 h-72 w-72 rounded-full bg-aqua/30 blur-3xl">
             </div>
-
             <div class="absolute -bottom-24 -left-24 h-72 w-72 rounded-full bg-teal/40 blur-3xl">
             </div>
-
             <!-- Content -->
-            <div class="relative container-custom py-16 lg:py-24">
-
-                <span
-                    class="inline-flex items-center gap-2 glass-dark rounded-full px-4 py-2 text-xs font-semibold uppercase tracking-[3px] animate-fade-up">
-
-                    <ion-icon name="school-outline" class="text-aqua text-sm">
-                    </ion-icon>
-
-                    Admissions Open
-
-                </span>
-
-                <h1 class="mt-5 font-display text-4xl lg:text-6xl font-bold animate-fade-up-delay-1">
-
-                    Admission Enquiry
-
+            <div class="relative container-custom">
+                <h1 class="font-display text-4xl lg:text-6xl font-bold text-white animate-fade-up">
+                    Teacher Login
                 </h1>
-
-                <p class="mt-4 max-w-2xl text-white/85 leading-relaxed animate-fade-up-delay-2">
-
-                    Tell us a little about your child and we'll get back to you
-                    with admission details, fee information and the next steps
-                    to join the Seth Chhoteylal Academy family.
-
+                <p class="mt-4 max-w-2xl text-white/85 text-base lg:text-lg leading-relaxed animate-fade-up-delay-1">
+                    Secure portal for our faculty members.
                 </p>
-
             </div>
-
         </section>
-        <!-- form -->
-        <section class="bg-soft section-padding">
-
-            <form class="container-custom max-w-5xl space-y-8">
-
-                <!-- Student Details -->
-                <div class="bg-white rounded-3xl border border-border p-6 lg:p-8">
-
-                    <h2 class="font-display text-2xl font-bold text-navy">
-                        Student Details
-                    </h2>
-
-                    <div class="mt-6 grid gap-5 md:grid-cols-2">
-
-                        <div>
-                            <label class="block text-sm font-medium text-navy mb-2">
-                                Student Name *
-                            </label>
-
-                            <input type="text"
-                                class="w-full rounded-xl border border-border px-4 py-3 focus:outline-none focus:ring-2 focus:ring-teal">
-                        </div>
-
-                        <div>
-                            <label class="block text-sm font-medium text-navy mb-2">
-                                Class / Grade *
-                            </label>
-
-                            <input type="text" placeholder="e.g. Class V"
-                                class="w-full rounded-xl border border-border px-4 py-3 focus:outline-none focus:ring-2 focus:ring-teal">
-                        </div>
-
+        <section class="section-padding">
+            <div class="container-custom max-w-3xl">
+                <div class="bg-white rounded-3xl border border-border shadow-xl p-8 md:p-10 text-center hover-lift">
+                    <!-- Icon -->
+                    <div
+                        class="mx-auto inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-aqua-soft text-teal">
+                        <ion-icon name="school-outline" class="text-4xl">
+                        </ion-icon>
                     </div>
-
-                </div>
-
-                <!-- Parent Details -->
-                <div class="bg-white rounded-3xl border border-border p-6 lg:p-8">
-
-                    <h2 class="font-display text-2xl font-bold text-navy">
-                        Parent Details
-                    </h2>
-
-                    <div class="mt-6 grid gap-5 md:grid-cols-2">
-
-                        <div>
-                            <label class="block text-sm font-medium text-navy mb-2">
-                                Father's Name *
-                            </label>
-
-                            <input type="text"
-                                class="w-full rounded-xl border border-border px-4 py-3 focus:outline-none focus:ring-2 focus:ring-teal">
-                        </div>
-
-                        <div>
-                            <label class="block text-sm font-medium text-navy mb-2">
-                                Mother's Name *
-                            </label>
-
-                            <input type="text"
-                                class="w-full rounded-xl border border-border px-4 py-3 focus:outline-none focus:ring-2 focus:ring-teal">
-                        </div>
-
+                    <!-- Badge -->
+                    <div
+                        class="mt-5 inline-flex items-center gap-2 rounded-full bg-aqua-soft px-4 py-1.5 text-xs font-semibold text-teal">
+                        <ion-icon name="time-outline" class="text-sm">
+                        </ion-icon>
+                        Coming Soon
                     </div>
-
-                </div>
-
-                <!-- Address -->
-                <div class="bg-white rounded-3xl border border-border p-6 lg:p-8">
-
-                    <h2 class="font-display text-2xl font-bold text-navy">
-                        Address Details
+                    <!-- Title -->
+                    <h2 class="mt-5 font-display text-2xl md:text-3xl font-bold text-navy">
+                        Teacher Portal Launching Soon
                     </h2>
-
-                    <div class="mt-6">
-
-                        <label class="block text-sm font-medium text-navy mb-2">
-                            Address *
-                        </label>
-
-                        <input type="text"
-                            class="w-full rounded-xl border border-border px-4 py-3 focus:outline-none focus:ring-2 focus:ring-teal">
-
-                    </div>
-
+                    <!-- Description -->
+                    <p class="mt-4 text-slate-text leading-relaxed max-w-lg mx-auto">
+                        We're building a dedicated portal for our teachers —
+                        attendance, lesson plans, gradebooks and parent communication,
+                        all in one place. Stay tuned.
+                    </p>
+                    <!-- Button -->
+                    <a href="contact.html"
+                        class="mt-8 inline-flex items-center gap-2 bg-teal text-white font-semibold rounded-full px-6 py-3 hover:bg-teal-dark transition-all duration-300 shadow-md shadow-teal/25">
+                        Contact Administration
+                        <ion-icon name="arrow-forward-outline" class="text-lg">
+                        </ion-icon>
+                    </a>
                 </div>
-
-                <!-- Enquiry -->
-                <div class="bg-white rounded-3xl border border-border p-6 lg:p-8">
-
-                    <h2 class="font-display text-2xl font-bold text-navy">
-                        Enquiry Details
-                    </h2>
-
-                    <div class="mt-6">
-
-                        <label class="block text-sm font-medium text-navy mb-2">
-                            Purpose of Enquiry *
-                        </label>
-
-                        <select
-                            class="w-full rounded-xl border border-border px-4 py-3 focus:outline-none focus:ring-2 focus:ring-teal">
-
-                            <option>Select...</option>
-                            <option>Admission</option>
-                            <option>Fees</option>
-                            <option>Transfer</option>
-                            <option>Other</option>
-
-                        </select>
-
-                    </div>
-
-                </div>
-
-                <!-- Submit -->
-                <div class="text-center">
-
-                    <button type="submit"
-                        class="inline-flex items-center gap-2 bg-teal text-white px-8 py-4 rounded-full font-semibold hover:bg-teal-dark transition-all hover-lift">
-
-                        <ion-icon name="send-outline"></ion-icon>
-
-                        Submit Enquiry
-
-                    </button>
-
-                </div>
-
-            </form>
-
+            </div>
         </section>
-
     </main>
     <footer class="bg-navy text-white/90 mt-16">
         <!-- Main Footer -->
@@ -468,7 +315,6 @@
                             Senior Secondary School Affiliated to CBSE, Delhi
                         </div>
                     </div>
-
                 </div>
                 <!-- Description -->
                 <p class="mt-4 text-sm text-white/65 max-w-xs leading-relaxed">
@@ -588,12 +434,8 @@
             </div>
         </div>
     </footer>
-
-
-
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="js/index.js"></script>
 </body>
-
 </html>
