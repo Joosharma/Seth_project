@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin page</title>
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch -->
+</head>
+
+<body>
+    <section class="bg-soft min-h-screen">
+        <div class="flex">
+            <!-- Sidebar -->
+            <aside class="w-72 bg-navy text-white min-h-screen p-6">
+                <div class="flex items-center gap-3 mb-10">
+                    <img src="assets/SCA NEW PNG2.png" class="h-12 w-12 object-contain">
+                    <div>
+                        <h2 class="font-display font-bold text-lg">
+                            SCA Admin
+                        </h2>
+                        <p class="text-xs text-white/70">
+                            Transfer Certificate Portal
+                        </p>
+                    </div>
+                </div>
+                <nav class="space-y-2">
+                    <a href="#" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-white/10">
+                        <ion-icon name="document-text-outline"></ion-icon>
+                        TC Management
+                    </a>
+                    <a href="#" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-white/10">
+                        <ion-icon name="cloud-upload-outline"></ion-icon>
+                        MPD Management
+                    </a>
+                </nav>
+            </aside>
+            <!-- Main Content -->
+            <main class="flex-1 p-8">
+                <!-- Header -->
+                <div class="flex items-center justify-between mb-8">
+                    <div>
+                        <h1 class="font-display text-3xl font-bold text-navy">
+                            TC Management Dashboard
+                        </h1>
+                        <p class="text-slate-text mt-1">
+                            Manage student transfer certificates.
+                        </p>
+                    </div>
+                    <button class="bg-teal text-white px-6 py-3 rounded-xl font-semibold hover:bg-teal-dark">
+                        Upload New TC
+                    </button>
+                </div>
+                <!-- Upload Form -->
+                <div class="bg-white rounded-3xl border border-border p-8">
+
+                    <h2 class="font-display text-2xl font-bold text-navy mb-6">
+                        Upload Transfer Certificate
+                    </h2>
+
+                    <div class="grid md:grid-cols-2 gap-5">
+
+                        <!-- Student Name -->
+                        <div>
+                            <label class="block text-sm font-medium text-navy mb-2">
+                                Student Name
+                            </label>
+                            <input type="text" placeholder="Enter student name"
+                                class="w-full border border-border rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-teal">
+                        </div>
+
+                        <!-- Roll Number -->
+                        <div>
+                            <label class="block text-sm font-medium text-navy mb-2">
+                                Roll Number
+                            </label>
+                            <input type="text" placeholder="Enter roll number"
+                                class="w-full border border-border rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-teal">
+                        </div>
+
+                    </div>
+
+                    <!-- Upload TC -->
+                    <div class="mt-5">
+
+                        <label class="block text-sm font-medium text-navy mb-2">
+                            Upload TC PDF
+                        </label>
+
+                        <label
+                            class="flex flex-col items-center justify-center w-full h-40 border-2 border-dashed border-border rounded-2xl bg-aqua-soft cursor-pointer hover:border-teal transition">
+
+                            <ion-icon name="cloud-upload-outline" class="text-5xl text-teal">
+                            </ion-icon>
+
+                            <span class="mt-2 text-slate-text">
+                                Click to upload TC PDF
+                            </span>
+
+                            <input type="file" accept=".pdf" class="hidden">
+
+                        </label>
+
+                    </div>
+
+                    <!-- Buttons -->
+                    <div class="flex gap-3 mt-6">
+
+                        <button
+                            class="bg-teal text-white px-6 py-3 rounded-xl font-semibold hover:bg-teal-dark transition">
+                            Upload TC
+                        </button>
+
+                        <button class="bg-aqua-soft text-teal px-6 py-3 rounded-xl font-semibold hover-lift">
+                            Reset
+                        </button>
+
+                    </div>
+
+                </div>
+                <!-- TC Table -->
+                <div class="bg-white rounded-3xl border border-border p-8 mt-8">
+                    <h2 class="font-display text-2xl font-bold text-navy mb-6">
+                        All Transfer Certificates
+                    </h2>
+                    <div class="overflow-x-auto">
+                        <table class="w-full">
+                            <thead>
+                                <tr class="bg-aqua-soft text-left">
+                                    <th class="p-4">Student</th>
+                                    <th class="p-4">Admission No</th>
+                                    <th class="p-4">Roll No</th>
+                                    <th class="p-4">Class</th>
+                                    <th class="p-4">Status</th>
+                                    <th class="p-4">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-b border-border">
+                                    <td class="p-4">Rahul Sharma</td>
+                                    <td class="p-4">ADM001</td>
+                                    <td class="p-4">101</td>
+                                    <td class="p-4">10th</td>
+                                    <td class="p-4">
+                                        <span class="bg-aqua-soft text-teal px-3 py-1 rounded-full text-xs">
+                                            Active
+                                        </span>
+                                    </td>
+                                    <td class="p-4 flex gap-2">
+                                        <button class="bg-aqua-soft p-2 rounded-lg text-teal">
+                                            <ion-icon name="eye-outline"></ion-icon>
+                                        </button>
+                                        <button class="bg-aqua-soft p-2 rounded-lg text-teal">
+                                            <ion-icon name="create-outline"></ion-icon>
+                                        </button>
+                                        <button class="bg-red-100 p-2 rounded-lg text-red-500">
+                                            <ion-icon name="trash-outline"></ion-icon>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
