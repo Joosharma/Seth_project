@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 </head>
 <body>
-    <div class="hidden md:block bg-white border-b border-border text-[12px] text-slate-text">
+     <div class="hidden md:block bg-white border-b border-border text-[12px] text-slate-text">
         <div class="container-custom py-1.5 flex items-center justify-between gap-4">
             <!-- Left Side -->
             <div class="flex items-center gap-5">
@@ -30,26 +30,31 @@
             <!-- Right Side -->
             <div class="flex items-center gap-3">
                 <!-- Facebook -->
-                <a href="#" aria-label="Facebook" class=" text-[#1877F2] transition-all duration-300">
+                <a href="https://www.facebook.com/info.scarath" aria-label="Facebook"
+                    class=" text-[#1877F2] transition-all duration-300">
                     <ion-icon name="logo-facebook" class="text-base">
                     </ion-icon>
                 </a>
                 <!-- Instagram -->
-                <a href="#" aria-label="Instagram" class="text-[#E4405F] transition-all duration-300">
+                <a href="https://www.instagram.com/info.scarath/" aria-label="Instagram"
+                    class="text-[#E4405F] transition-all duration-300">
                     <ion-icon name="logo-instagram" class="text-base">
                     </ion-icon>
                 </a>
                 <!-- YouTube -->
-                <a href="#" aria-label="YouTube" class="text-[#FF0000] transition-all duration-300">
+                <a href="https://www.youtube.com/@sethchhoteylalacademy" aria-label="YouTube"
+                    class="text-[#FF0000] transition-all duration-300">
                     <ion-icon name="logo-youtube" class="text-base">
                     </ion-icon>
                 </a>
                 <!-- Twitter/X -->
-                <a href="#" aria-label="Twitter" class="text-black transition-all duration-300 font-bold">
+                <a href="https://x.com/SCARATH_70583" aria-label="Twitter"
+                    class="text-black transition-all duration-300 font-bold">
                     X
                 </a>
                 <!-- WhatsApp -->
-                <a href="#" aria-label="WhatsApp" class="text-[#25D366] transition-all duration-300">
+                <a href="https://wa.me/918604622672" target="_blank" aria-label="WhatsApp"
+                    class="text-[#25D366] transition-all duration-300">
                     <ion-icon name="logo-whatsapp" class="text-base">
                     </ion-icon>
                 </a>
@@ -68,22 +73,28 @@
                     class="ml-1 inline-flex items-center rounded-full bg-teal text-white font-semibold px-3 py-1 hover:bg-teal-dark transition-all duration-300 shadow-sm">
                     TC Download
                 </a>
+                <!-- admin -->
+                  <a href="admin.html"
+                    class="ml-1 inline-flex items-center rounded-full bg-teal text-white font-semibold px-3 py-1 hover:bg-teal-dark transition-all duration-300 shadow-sm">
+                   Admin
+                </a>
             </div>
         </div>
     </div>
     <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-sm shadow-sm">
+
         <nav class="container-custom h-16 flex items-center justify-between py-0">
             <!-- Logo -->
             <a href="index.html" class="flex items-center gap-2.5">
-                <div class="h-12 w-12">
+                <div class="h-15 w-15">
                     <img src="assets/SCA NEW PNG2.png" alt="Seth Chhoteylal Academy Logo"
                         class="h-full w-full object-contain">
                 </div>
-                <div class="leading-tight">
-                    <h2 class="font-display font-bold text-navy text-[13px] sm:text-sm">
+                <div class="leading-7">
+                    <h2 class="font-display font-bold text-navy text-sm lg:text-xl sm:text-lg">
                         Seth Chhoteylal Academy
                     </h2>
-                    <p class="hidden sm:block text-[10px] text-slate-text">
+                    <p class="hidden sm:block text-xs lg:text-sm text-slate-text leading-tight">
                         Senior Secondary School Affiliated to CBSE, Delhi
                     </p>
                 </div>
@@ -95,29 +106,138 @@
                         Home
                     </a>
                 </li>
-                <li>
+                <li class="relative group">
                     <a href="about.html" class="px-3 py-2 text-slate-text hover:text-teal transition">
                         About
                     </a>
+                    <!-- Dropdown Menu -->
+                    <ul
+                        class="absolute left-0 top-full mt-1 w-52 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                        <li>
+                            <a href="#" class="block px-4 py-3 hover:bg-gray-100">
+                                Principal Message
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="block px-4 py-3 hover:bg-gray-100">
+                                Manager Message
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="block px-4 py-3 hover:bg-gray-100">
+                                Our Picture
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="block px-4 py-3 hover:bg-gray-100">
+                                Facilities & Faculty
+                            </a>
+                        </li>
+                    </ul>
                 </li>
-                <li>
+                <li class="relative group">
+                    <a href="#gallery" class="px-3 py-2 text-slate-text hover:text-teal transition">
+                        Gallery
+                    </a>
+                    <!-- Dropdown Menu -->
+                    <ul
+                        class="absolute left-0 top-full mt-1 w-44 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                        <li>
+                            <a href="#" class="block px-4 py-3 hover:bg-gray-100">
+                                Pictures
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="block px-4 py-3 hover:bg-gray-100">
+                                Videos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="block px-4 py-3 hover:bg-gray-100">
+                                Campus
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- erp -->
+                <li class="relative group">
+                    <a href="https://share.google/4OI7ESN0w0K58a7n2"
+                        class="px-3 py-2 text-slate-text hover:text-teal transition">
+                        ERP
+                    </a>
+                    <!-- Dropdown Menu -->
+                    <ul
+                        class="absolute left-0 top-full mt-1 w-44 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                        <li>
+                            <a href="studentLogin.html" class="block px-4 py-3 hover:bg-gray-100">
+                                Student Login
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://apps.apple.com/in/app/edutinker-your-institute-app/id1536884660"
+                                class="block px-4 py-3 hover:bg-gray-100">
+                                DownLoads Details
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- Dropdown -->
+                <li class="relative group">
+                    <button class="inline-flex items-center gap-1 px-3 py-2 text-slate-text hover:text-teal transition">
+                        MPD
+                    </button>
+                    <!-- Dropdown Menu -->
+                    <ul
+                        class="absolute left-0 top-full mt-1 w-52 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                        <li><a href="assets/pdf/School_Fee_Structure_Template.pdf"
+                                class="block px-4 py-3 hover:bg-gray-100">Fee Structure</a></li>
+                        <li><a href="assets/pdf/Academic_Calendar.pdf"
+                                class="block px-4 py-3 hover:bg-gray-100">Academic Calendar</a></li>
+                        <li><a href="assets/pdf/Fire_Safety.pdf" class="block px-4 py-3 hover:bg-gray-100">Fire
+                                Safety</a></li>
+                        <li><a href="assets/pdf/Building_Safety.pdf" class="block px-4 py-3 hover:bg-gray-100">Building
+                                Safety</a></li>
+                        <li><a href="assets/pdf/Trust_Deed.pdf" class="block px-4 py-3 hover:bg-gray-100">Trust Deed</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="relative group">
                     <a href="enquiry.html" class="px-3 py-2 text-slate-text hover:text-teal transition">
                         Enquiry
                     </a>
+                    <!-- Dropdown Menu -->
+                    <ul
+                        class="absolute left-0 top-full mt-1 w-52 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                        <li>
+                            <a href="#" class="block px-4 py-3 hover:bg-gray-100">
+                                Admission
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tc_download.html" class="block px-4 py-3 hover:bg-gray-100">
+                                TC Download
+                            </a>
+                        </li>
+                    </ul>
                 </li>
-                <!-- Dropdown -->
-                <li>
-                    <button
-                        class="inline-flex items-center gap-1 px-3 py-2 text-[13px] font-medium text-slate-text hover:text-teal rounded-md transition-all duration-300">
-                        MPD
-                        <ion-icon name="chevron-down-outline" class="text-sm">
-                        </ion-icon>
-                    </button>
-                </li>
-                <li>
+                <li class="relative group">
                     <a href="contact.html" class="px-3 py-2 text-slate-text hover:text-teal transition">
                         Contact
                     </a>
+                    <!-- Dropdown Menu -->
+                    <ul
+                        class="absolute left-0 top-full mt-1 w-52 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                        <li>
+                            <a href="tel:+918354939456" class="block px-4 py-3 hover:bg-gray-100">
+                                School Contact
+                            </a>
+                        </li>
+                        <li>
+                            <a href="admin.scarath@gmail.com" class="block px-4 py-3 hover:bg-gray-100">
+                                IT Support
+                            </a>
+                        </li>
+                    </ul>
                 </li>
             </ul>
             <!-- Desktop CTA -->
