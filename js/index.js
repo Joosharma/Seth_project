@@ -94,8 +94,8 @@ const newsSwiper = new Swiper(".newsSwiper", {
   allowTouchMove: false,
 
   navigation: {
-    nextEl: ".news-next",
-    prevEl: ".news-prev",
+    nextEl: ".news-nextup",
+    prevEl: ".news-prevdown",
   },
 });
 // tc /mpd
@@ -124,3 +124,4 @@ mpdTab.addEventListener("click", () => {
     tcTab.classList.remove("bg-teal", "text-white");
 
 });
+

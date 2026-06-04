@@ -34,26 +34,31 @@
             <!-- Right Side -->
             <div class="flex items-center gap-3">
                 <!-- Facebook -->
-                <a href="#" aria-label="Facebook" class=" text-[#1877F2] transition-all duration-300">
+                <a href="https://www.facebook.com/info.scarath" aria-label="Facebook"
+                    class=" text-[#1877F2] transition-all duration-300">
                     <ion-icon name="logo-facebook" class="text-base">
                     </ion-icon>
                 </a>
                 <!-- Instagram -->
-                <a href="#" aria-label="Instagram" class="text-[#E4405F] transition-all duration-300">
+                <a href="https://www.instagram.com/info.scarath/" aria-label="Instagram"
+                    class="text-[#E4405F] transition-all duration-300">
                     <ion-icon name="logo-instagram" class="text-base">
                     </ion-icon>
                 </a>
                 <!-- YouTube -->
-                <a href="#" aria-label="YouTube" class="text-[#FF0000] transition-all duration-300">
+                <a href="https://www.youtube.com/@sethchhoteylalacademy" aria-label="YouTube"
+                    class="text-[#FF0000] transition-all duration-300">
                     <ion-icon name="logo-youtube" class="text-base">
                     </ion-icon>
                 </a>
                 <!-- Twitter/X -->
-                <a href="#" aria-label="Twitter" class="text-black transition-all duration-300 font-bold">
+                <a href="https://x.com/SCARATH_70583" aria-label="Twitter"
+                    class="text-black transition-all duration-300 font-bold">
                     X
                 </a>
                 <!-- WhatsApp -->
-                <a href="#" aria-label="WhatsApp" class="text-[#25D366] transition-all duration-300">
+                <a href="https://wa.me/918604622672" target="_blank" aria-label="WhatsApp"
+                    class="text-[#25D366] transition-all duration-300">
                     <ion-icon name="logo-whatsapp" class="text-base">
                     </ion-icon>
                 </a>
@@ -71,6 +76,11 @@
                 <a href="tc_download.html"
                     class="ml-1 inline-flex items-center rounded-full bg-teal text-white font-semibold px-3 py-1 hover:bg-teal-dark transition-all duration-300 shadow-sm">
                     TC Download
+                </a>
+                <!-- admin -->
+                  <a href="admin.html"
+                    class="ml-1 inline-flex items-center rounded-full bg-teal text-white font-semibold px-3 py-1 hover:bg-teal-dark transition-all duration-300 shadow-sm">
+                   Admin
                 </a>
             </div>
         </div>
@@ -99,58 +109,138 @@
                         Home
                     </a>
                 </li>
-                <li>
+                <li class="relative group">
                     <a href="about.html" class="px-3 py-2 text-slate-text hover:text-teal transition">
                         About
                     </a>
+                    <!-- Dropdown Menu -->
+                    <ul
+                        class="absolute left-0 top-full mt-1 w-52 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                        <li>
+                            <a href="#" class="block px-4 py-3 hover:bg-gray-100">
+                                Principal Message
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="block px-4 py-3 hover:bg-gray-100">
+                                Manager Message
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="block px-4 py-3 hover:bg-gray-100">
+                                Our Picture
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="block px-4 py-3 hover:bg-gray-100">
+                                Facilities & Faculty
+                            </a>
+                        </li>
+                    </ul>
                 </li>
-                <li>
+                <li class="relative group">
                     <a href="#gallery" class="px-3 py-2 text-slate-text hover:text-teal transition">
                         Gallery
                     </a>
+                    <!-- Dropdown Menu -->
+                    <ul
+                        class="absolute left-0 top-full mt-1 w-44 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                        <li>
+                            <a href="#" class="block px-4 py-3 hover:bg-gray-100">
+                                Pictures
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="block px-4 py-3 hover:bg-gray-100">
+                                Videos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="block px-4 py-3 hover:bg-gray-100">
+                                Campus
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- erp -->
+                <li class="relative group">
+                    <a href="https://share.google/4OI7ESN0w0K58a7n2"
+                        class="px-3 py-2 text-slate-text hover:text-teal transition">
+                        ERP
+                    </a>
+                    <!-- Dropdown Menu -->
+                    <ul
+                        class="absolute left-0 top-full mt-1 w-44 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                        <li>
+                            <a href="studentLogin.html" class="block px-4 py-3 hover:bg-gray-100">
+                                Student Login
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://apps.apple.com/in/app/edutinker-your-institute-app/id1536884660"
+                                class="block px-4 py-3 hover:bg-gray-100">
+                                DownLoads Details
+                            </a>
+                        </li>
+                    </ul>
                 </li>
                 <!-- Dropdown -->
                 <li class="relative group">
-                    <button
-                        class="inline-flex items-center gap-1 px-3 py-2 text-[13px] font-medium text-slate-text hover:text-teal">
+                    <button class="inline-flex items-center gap-1 px-3 py-2 text-slate-text hover:text-teal transition">
                         MPD
-                        <ion-icon name="chevron-down-outline" class="text-sm"></ion-icon>
                     </button>
-                    <!-- Dropdown -->
-                    <div class="absolute left-0 top-full mt-2 w-64 bg-white rounded-2xl shadow-2xl border border-border
-                     opacity-0 invisible translate-y-3
-                     group-hover:opacity-100 group-hover:visible group-hover:translate-y-0
-                    transition-all duration-300 z-50">
-                        <ul class="py-2 text-navy text-sm">
-                            <li><a href="assets/pdf/School_Fee_Structure_Template.pdf"
-                                    class="block px-5 py-1 hover:text-teal">Fee Structure</a></li>
-                            <li><a href="assets/pdf/Academic_Calendar.pdf"
-                                    class="block px-5 py-1 hover:text-teal">Academic Calendar</a></li>
-                            <li><a href="assets/pdf/Fire_Safety.pdf" class="block px-5 py-1 hover:text-teal">Fire
-                                    Safety</a></li>
-                            <li><a href="assets/pdf/Building_Safety.pdf"
-                                    class="block px-5 py-1 hover:text-teal">Building Safety</a></li>
-                            <li><a href="assets/pdf/Trust_Deed.pdf" class="block px-5 py-1 hover:text-teal">Trust
-                                    Deed</a></li>
-                            <li><a href="assets/pdf/SMC.pdf" class="block px-5 py-1 hover:text-teal">SMC</a></li>
-                            <li><a href="assets/pdf/TC_Download.pdf" class="block px-5 py-1 hover:text-teal">TC
-                                    Download</a></li>
-                            <li><a href="assets/pdf/Water_Analysis.pdf" class="block px-5 py-1 hover:text-teal">Water
-                                    Analysis</a></li>
-                            <li><a href="assets/pdf/Certificates.pdf"
-                                    class="block px-5 py-1 hover:text-teal">Certificates</a></li>
-                        </ul>
-                    </div>
+                    <!-- Dropdown Menu -->
+                    <ul
+                        class="absolute left-0 top-full mt-1 w-52 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                        <li><a href="assets/pdf/School_Fee_Structure_Template.pdf"
+                                class="block px-4 py-3 hover:bg-gray-100">Fee Structure</a></li>
+                        <li><a href="assets/pdf/Academic_Calendar.pdf"
+                                class="block px-4 py-3 hover:bg-gray-100">Academic Calendar</a></li>
+                        <li><a href="assets/pdf/Fire_Safety.pdf" class="block px-4 py-3 hover:bg-gray-100">Fire
+                                Safety</a></li>
+                        <li><a href="assets/pdf/Building_Safety.pdf" class="block px-4 py-3 hover:bg-gray-100">Building
+                                Safety</a></li>
+                        <li><a href="assets/pdf/Trust_Deed.pdf" class="block px-4 py-3 hover:bg-gray-100">Trust Deed</a>
+                        </li>
+                    </ul>
                 </li>
-                <li>
+                <li class="relative group">
                     <a href="enquiry.html" class="px-3 py-2 text-slate-text hover:text-teal transition">
                         Enquiry
                     </a>
+                    <!-- Dropdown Menu -->
+                    <ul
+                        class="absolute left-0 top-full mt-1 w-52 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                        <li>
+                            <a href="#" class="block px-4 py-3 hover:bg-gray-100">
+                                Admission
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tc_download.html" class="block px-4 py-3 hover:bg-gray-100">
+                                TC Download
+                            </a>
+                        </li>
+                    </ul>
                 </li>
-                <li>
+                <li class="relative group">
                     <a href="contact.html" class="px-3 py-2 text-slate-text hover:text-teal transition">
                         Contact
                     </a>
+                    <!-- Dropdown Menu -->
+                    <ul
+                        class="absolute left-0 top-full mt-1 w-52 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                        <li>
+                            <a href="tel:+918354939456" class="block px-4 py-3 hover:bg-gray-100">
+                                School Contact
+                            </a>
+                        </li>
+                        <li>
+                            <a href="admin.scarath@gmail.com" class="block px-4 py-3 hover:bg-gray-100">
+                                IT Support
+                            </a>
+                        </li>
+                    </ul>
                 </li>
             </ul>
             <!-- Desktop CTA -->
@@ -393,12 +483,12 @@
                                 <!-- Navigation -->
                                 <div class="flex items-center gap-1">
                                     <button aria-label="Previous News"
-                                        class="news-prev h-7 w-7 inline-flex items-center justify-center rounded-full bg-white/70 hover:bg-white text-navy transition-all duration-300">
+                                        class="news-prevdown h-7 w-7 inline-flex items-center justify-center rounded-full bg-white/70 hover:bg-white text-navy transition-all duration-300">
                                         <ion-icon name="chevron-up-outline" class="text-sm">
                                         </ion-icon>
                                     </button>
                                     <button aria-label="Next News"
-                                        class="news-next h-7 w-7 inline-flex items-center justify-center rounded-full bg-white/70 hover:bg-white text-navy transition-all duration-300">
+                                        class="news-nextup h-7 w-7 inline-flex items-center justify-center rounded-full bg-white/70 hover:bg-white text-navy transition-all duration-300">
                                         <ion-icon name="chevron-down-outline" class="text-sm">
                                         </ion-icon>
                                     </button>
@@ -981,7 +1071,6 @@
                 </div>
             </div>
         </section>
-        <!-- addmission process -->
         <section class="bg-white section-padding">
             <div class="container-custom">
                 <!-- Heading -->
@@ -1344,8 +1433,7 @@
                         <div
                             class="flex items-center gap-3 bg-white rounded-2xl p-2.5 pr-4 ring-1 ring-slate-200/70 shadow-sm">
                             <div class="h-12 w-12 rounded-lg bg-soft flex items-center justify-center text-navy">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round" class="lucide lucide-qr-code h-7 w-7" aria-hidden="true">
                                     <rect width="5" height="5" x="3" y="3" rx="1"></rect>
@@ -1360,7 +1448,8 @@
                                     <path d="M16 12h1"></path>
                                     <path d="M21 12v.01"></path>
                                     <path d="M12 21v-1"></path>
-                                </svg></div>
+                                </svg>
+                            </div>
                             <div class="leading-tight">
                                 <p class="text-[10px] uppercase tracking-wider text-slate-500">Scan to Install</p>
                                 <p class="text-xs font-semibold text-navy">EduTinker App</p>
@@ -1775,6 +1864,16 @@
             </div>
         </div>
     </footer>
+    <!-- whatsapp floating button -->
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/918604622672" target="_blank"
+        class="fixed bottom-5 right-5 z-50 bg-green-500 hover:bg-green-600 text-white rounded-full p-3 shadow-lg transition-all duration-300 hover:scale-110"
+        aria-label="Chat on WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+            <path
+                d="M20.52 3.48A11.8 11.8 0 0 0 12.07 0C5.5 0 .16 5.34.16 11.91c0 2.1.55 4.15 1.6 5.96L0 24l6.32-1.66a11.9 11.9 0 0 0 5.75 1.46h.01c6.57 0 11.91-5.34 11.91-11.91 0-3.18-1.24-6.17-3.47-8.41ZM12.08 21.8h-.01a9.88 9.88 0 0 1-5.03-1.37l-.36-.21-3.75.98 1-3.65-.23-.38a9.88 9.88 0 0 1-1.51-5.26c0-5.46 4.44-9.9 9.9-9.9a9.84 9.84 0 0 1 7 2.9 9.84 9.84 0 0 1 2.9 7c0 5.46-4.44 9.9-9.91 9.9Zm5.43-7.43c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.46-.88-.79-1.47-1.77-1.64-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.52.07-.8.37-.27.3-1.05 1.02-1.05 2.5s1.07 2.9 1.22 3.1c.15.2 2.1 3.2 5.1 4.48.71.31 1.27.5 1.7.64.71.22 1.36.19 1.87.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.08-.12-.28-.2-.58-.35Z" />
+        </svg>
+    </a>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
