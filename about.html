@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <div class="hidden md:block bg-white border-b border-border text-[12px] text-slate-text">
+   <div class="hidden md:block bg-white border-b border-border text-[12px] text-slate-text">
         <div class="container-custom py-1.5 flex items-center justify-between gap-4">
             <!-- Left Side -->
             <div class="flex items-center gap-5">
@@ -83,8 +83,7 @@
             </div>
         </div>
     </div>
-    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-sm shadow-sm">
-
+   <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-sm shadow-sm">
         <nav class="container-custom h-16 flex items-center justify-between py-0">
             <!-- Logo -->
             <a href="index.html" class="flex items-center gap-2.5">
@@ -108,6 +107,7 @@
                         Home
                     </a>
                 </li>
+                <!-- about -->
                 <li class="relative group">
                     <a href="about.html" class="px-3 py-2 text-slate-text hover:text-teal transition">
                         About
@@ -116,46 +116,46 @@
                     <ul
                         class="absolute left-0 top-full mt-1 w-52 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
                         <li>
-                            <a href="#" class="block px-4 py-3 hover:bg-gray-100">
+                            <a href="about.html#principal-message" class="block px-4 py-3 hover:bg-gray-100">
                                 Principal Message
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="block px-4 py-3 hover:bg-gray-100">
+                            <a href="about.html#manager-message" class="block px-4 py-3 hover:bg-gray-100">
                                 Manager Message
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="block px-4 py-3 hover:bg-gray-100">
-                                Our Picture
+                            <a href="about.html#our-picture" class="block px-4 py-3 hover:bg-gray-100">
+                                Our Parton
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="block px-4 py-3 hover:bg-gray-100">
+                            <a href="about.html#facilities-faculty" class="block px-4 py-3 hover:bg-gray-100">
                                 Facilities & Faculty
                             </a>
                         </li>
                     </ul>
                 </li>
                 <li class="relative group">
-                    <a href="#gallery" class="px-3 py-2 text-slate-text hover:text-teal transition">
+                    <a href="gallery.html" class="px-3 py-2 text-slate-text hover:text-teal transition">
                         Gallery
                     </a>
                     <!-- Dropdown Menu -->
                     <ul
                         class="absolute left-0 top-full mt-1 w-44 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
                         <li>
-                            <a href="#" class="block px-4 py-3 hover:bg-gray-100">
+                            <a href="gallery.html#pictures" class="block px-4 py-3 hover:bg-gray-100">
                                 Pictures
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="block px-4 py-3 hover:bg-gray-100">
+                            <a href="gallery.html#videos" class="block px-4 py-3 hover:bg-gray-100">
                                 Videos
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="block px-4 py-3 hover:bg-gray-100">
+                            <a href="gallery.html#campus" class="block px-4 py-3 hover:bg-gray-100">
                                 Campus
                             </a>
                         </li>
@@ -176,9 +176,8 @@
                             </a>
                         </li>
                         <li>
-                            <a href="https://apps.apple.com/in/app/edutinker-your-institute-app/id1536884660"
-                                class="block px-4 py-3 hover:bg-gray-100">
-                                DownLoads Details
+                            <a href="teacherLogin.html" class="block px-4 py-3 hover:bg-gray-100">
+                                Teacher Login
                             </a>
                         </li>
                     </ul>
@@ -203,7 +202,7 @@
                         </li>
                     </ul>
                 </li>
-                <li class="relative group">
+                <li class="relative group hidden">
                     <a href="enquiry.html" class="px-3 py-2 text-slate-text hover:text-teal transition">
                         Enquiry
                     </a>
@@ -255,169 +254,194 @@
         </nav>
     </header>
 
-    <!-- Overlay -->
+   <!-- Overlay -->
     <div id="menuOverlay" class="fixed inset-0 bg-black/50 z-40 hidden">
     </div>
-
-    <!-- Offcanvas -->
-    <div id="mobileMenu" class="fixed top-0 right-0 h-screen w-full bg-white z-50
+   <!-- Offcanvas -->
+   <div id="mobileMenu" class="fixed top-0 right-0 h-screen w-full bg-white z-50
            -translate-y-full transition-transform duration-300
            shadow-2xl overflow-y-auto">
-
         <!-- Header -->
         <div class="flex items-center justify-between p-4 border-b border-border">
-
             <h2 class="font-display text-xl font-bold text-navy">
-
                 Menu
-
             </h2>
-
             <button id="closeBtn">
-
                 <ion-icon name="close-outline" class="text-3xl text-navy">
                 </ion-icon>
-
             </button>
-
         </div>
-
         <!-- Menu Links -->
         <ul class="px-4 py-3 space-y-1">
-
             <li>
                 <a href="index.html" class="block px-3 py-3 rounded-xl text-sm font-semibold text-teal bg-aqua-soft">
                     Home
                 </a>
             </li>
-
+            <!-- about -->
             <li>
-                <a href="about.html"
-                    class="block px-3 py-3 rounded-xl text-sm font-medium text-navy hover:bg-aqua-soft hover:text-teal transition">
-                    About
-                </a>
-            </li>
-
-
-
-            <!-- MPD Dropdown -->
-            <li>
-
                 <details class="group">
-
                     <summary
                         class="flex items-center justify-between cursor-pointer px-3 py-3 rounded-xl text-sm font-medium text-navy hover:bg-aqua-soft hover:text-teal transition">
-
-                        MPD
-
+                        About
                         <ion-icon name="chevron-down-outline"
                             class="text-base transition-transform group-open:rotate-180">
                         </ion-icon>
-
                     </summary>
 
                     <div class="mt-2 ml-3 space-y-1">
-
-                        <a href="fee-structure.html"
+                        <a href="about.html"
                             class="block px-3 py-2 rounded-lg text-sm text-slate-text hover:bg-aqua-soft hover:text-teal">
-                            Fee Structure
+                            About School
                         </a>
 
-                        <a href="academic-calendar.html"
+                        <a href="about.html#principal-message"
                             class="block px-3 py-2 rounded-lg text-sm text-slate-text hover:bg-aqua-soft hover:text-teal">
-                            Academic Calendar
+                            Principal Message
                         </a>
 
-                        <a href="fire-safety.html"
+                        <a href="about.html#manager-message"
                             class="block px-3 py-2 rounded-lg text-sm text-slate-text hover:bg-aqua-soft hover:text-teal">
-                            Fire Safety
+                            Manager Message
                         </a>
 
-                        <a href="building-safety.html"
+                        <a href="our-mission.html"
                             class="block px-3 py-2 rounded-lg text-sm text-slate-text hover:bg-aqua-soft hover:text-teal">
-                            Building Safety
+                            Our Patron
+                        </a>
+                        <a href="about.html#facilities-faculty"
+                            class="block px-3 py-2 rounded-lg text-sm text-slate-text hover:bg-aqua-soft hover:text-teal">
+                            Facilities & Faculty
+                        </a>
+                    </div>
+                </details>
+            </li>
+            <!-- Gallery-->
+            <li>
+                <details class="group">
+                    <summary
+                        class="flex items-center justify-between cursor-pointer px-3 py-3 rounded-xl text-sm font-medium text-navy hover:bg-aqua-soft hover:text-teal transition">
+                        Gallery
+                        <ion-icon name="chevron-down-outline"
+                            class="text-base transition-transform group-open:rotate-180">
+                        </ion-icon>
+                    </summary>
+
+                    <div class="mt-2 ml-3 space-y-1">
+                        <a href="about.html"
+                            class="block px-3 py-2 rounded-lg text-sm text-slate-text hover:bg-aqua-soft hover:text-teal">
+                            Gallery
                         </a>
 
-                        <a href="trust-deed.html"
+                        <a href="principal-message.html"
                             class="block px-3 py-2 rounded-lg text-sm text-slate-text hover:bg-aqua-soft hover:text-teal">
-                            Trust Deed
+                            Pictures
                         </a>
 
-                        <a href="smc.html"
+                        <a href="director-message.html"
                             class="block px-3 py-2 rounded-lg text-sm text-slate-text hover:bg-aqua-soft hover:text-teal">
-                            SMC
+                            Videos
                         </a>
 
-                        <a href="tc-download.html"
+                        <a href="our-mission.html"
                             class="block px-3 py-2 rounded-lg text-sm text-slate-text hover:bg-aqua-soft hover:text-teal">
-                            TC Download
-                        </a>
-
-                        <a href="water-analysis.html"
-                            class="block px-3 py-2 rounded-lg text-sm text-slate-text hover:bg-aqua-soft hover:text-teal">
-                            Water Analysis
-                        </a>
-
-                        <a href="certificates.html"
-                            class="block px-3 py-2 rounded-lg text-sm text-slate-text hover:bg-aqua-soft hover:text-teal">
-                            Certificates
+                            Campus
                         </a>
 
                     </div>
-
                 </details>
-
             </li>
-
+            <!-- erp -->
             <li>
-                <a href="enquiry.html"
-                    class="block px-3 py-3 rounded-xl text-sm font-medium text-navy hover:bg-aqua-soft hover:text-teal transition">
-                    Enquiry
-                </a>
-            </li>
+                <details class="group">
+                    <summary
+                        class="flex items-center justify-between cursor-pointer px-3 py-3 rounded-xl text-sm font-medium text-navy hover:bg-aqua-soft hover:text-teal transition">
+                        ERP
+                        <ion-icon name="chevron-down-outline"
+                            class="text-base transition-transform group-open:rotate-180">
+                        </ion-icon>
+                    </summary>
 
+                    <div class="mt-2 ml-3 space-y-1">
+                        <a href="contact.html"
+                            class="block px-3 py-2 rounded-lg text-sm text-slate-text hover:bg-aqua-soft hover:text-teal">
+                            School Login
+                        </a>
+
+                        <a href="location.html"
+                            class="block px-3 py-2 rounded-lg text-sm text-slate-text hover:bg-aqua-soft hover:text-teal">
+                            Downloads Details
+                        </a>
+
+
+                    </div>
+                </details>
+            </li>
+            <!-- MPD Dropdown -->
             <li>
-                <a href="contact.html"
-                    class="block px-3 py-3 rounded-xl text-sm font-medium text-navy hover:bg-aqua-soft hover:text-teal transition">
-                    Contact
-                </a>
-            </li>
+                <details class="group">
+                    <summary
+                        class="flex items-center justify-between cursor-pointer px-3 py-3 rounded-xl text-sm font-medium text-navy hover:bg-aqua-soft hover:text-teal transition">
+                        MPD
+                        <ion-icon name="chevron-down-outline"
+                            class="text-base transition-transform group-open:rotate-180">
+                        </ion-icon>
+                    </summary>
+                    <div class="mt-2 ml-3 space-y-1">
+                        <a href="fee-structure.html"
+                            class="block px-3 py-2 rounded-lg text-sm text-slate-text hover:bg-aqua-soft hover:text-teal">
+                            CBSE Related Tabs
+                        </a>
 
+
+                    </div>
+                </details>
+            </li>
+            <!-- contact -->
+            <li>
+                <details class="group">
+                    <summary
+                        class="flex items-center justify-between cursor-pointer px-3 py-3 rounded-xl text-sm font-medium text-navy hover:bg-aqua-soft hover:text-teal transition">
+                        Contact
+                        <ion-icon name="chevron-down-outline"
+                            class="text-base transition-transform group-open:rotate-180">
+                        </ion-icon>
+                    </summary>
+
+                    <div class="mt-2 ml-3 space-y-1">
+                        <a href="contact.html"
+                            class="block px-3 py-2 rounded-lg text-sm text-slate-text hover:bg-aqua-soft hover:text-teal">
+                            School Contact
+                        </a>
+
+                        <a href="location.html"
+                            class="block px-3 py-2 rounded-lg text-sm text-slate-text hover:bg-aqua-soft hover:text-teal">
+                            IT Support
+                        </a>
+
+
+                    </div>
+                </details>
+            </li>
             <!-- Login Buttons -->
             <li class="grid grid-cols-2 gap-3 pt-3">
-
                 <a href="teacherLogin.html"
                     class="text-center border border-border rounded-full px-4 py-2.5 text-sm font-medium text-slate-text hover:text-teal transition">
-
                     Teacher Login
-
                 </a>
-
                 <a href="studentLogin.html"
                     class="text-center border border-border rounded-full px-4 py-2.5 text-sm font-medium text-slate-text hover:text-teal transition">
-
                     Student Login
-
                 </a>
-
             </li>
-
             <!-- CTA -->
             <li class="pt-3">
-
                 <a href="tc_download.html"
                     class="block text-center bg-teal text-white font-semibold rounded-full px-4 py-3 hover:bg-teal-dark transition">
-
                     TC Download
-
                 </a>
-
             </li>
-
         </ul>
-
-
-
     </div>
 
     <main>
@@ -476,15 +500,9 @@
                         Facilities & Faculty
                     </a>
 
-                    <a href="#gallery"
-                        class="shrink-0 px-4 py-2 text-[13px] font-medium text-slate-text hover:text-teal hover:bg-aqua-soft rounded-full transition whitespace-nowrap">
-                        Gallery
-                    </a>
+                    
 
-                    <a href="#faq"
-                        class="shrink-0 px-4 py-2 text-[13px] font-medium text-slate-text hover:text-teal hover:bg-aqua-soft rounded-full transition whitespace-nowrap">
-                        FAQ
-                    </a>
+                    
 
                 </div>
 
@@ -544,9 +562,9 @@
 
         </section>
         <!-- principle -->
-        <section id="principal-message" class="section-padding scroll-mt-32">
+        <section id="principal-message"  class="section-padding scroll-mt-32">
 
-            <div class="container-custom grid gap-12 lg:grid-cols-[35%_65%] items-start">
+            <div class="container-custom grid gap-12 lg:grid-cols-[35%_65%] items-start" >
 
                 <!-- Image Card -->
                 <div class="relative h-full">
@@ -564,7 +582,7 @@
                                 <div
                                     class="mx-auto h-32 w-32 rounded-full bg-white/15 backdrop-blur flex items-center justify-center font-display text-4xl font-bold">
 
-                                    AB
+                                   <img src="assets/principal.jpg" alt="img of principal" class="h-full w-full object-cover rounded-full">
 
                                 </div>
 
@@ -748,7 +766,7 @@
                                 <div
                                     class="mx-auto h-32 w-32 rounded-full bg-white/15 backdrop-blur flex items-center justify-center font-display text-4xl font-bold">
 
-                                    RA
+                                    <img src="assets/manager.jpeg" alt="img of manager" class="h-full w-full object-cover rounded-full">
 
                                 </div>
 
@@ -1053,7 +1071,7 @@
 
         </section>
         <!-- our faculty -->
-        <section class="bg-soft section-padding">
+        <section id="facilities-faculty" class="bg-soft section-padding">
 
             <div class="container-custom">
 
@@ -1427,18 +1445,17 @@
             <div class="md:col-span-1">
                 <div class="flex items-center gap-3">
                     <!-- Logo -->
-                    <img src="assets/logo.png" alt="Seth Chhoteylal Academy Logo"
-                        class="h-12 w-12 object-contain bg-white rounded-xl p-1">
+                    <img src="assets/SCA NEW PNG2.png" alt="Seth Chhoteylal Academy Logo"
+                        class="h-14 w-14 object-contain  bg-white rounded-xl p-1">
                     <!-- Name -->
                     <div>
                         <div class="font-display font-bold text-white text-sm">
                             Seth Chhoteylal Academy
                         </div>
-                        <div class="text-[10px] text-slate-text hidden sm:block">
+                        <div class="text-[10px] text-gray-400 hidden sm:block">
                             Senior Secondary School Affiliated to CBSE, Delhi
                         </div>
                     </div>
-
                 </div>
                 <!-- Description -->
                 <p class="mt-4 text-sm text-white/65 max-w-xs leading-relaxed">
@@ -1472,11 +1489,7 @@
                             Admission Enquiry
                         </a>
                     </li>
-                    <li>
-                        <a href="#" class="text-white/70 hover:text-teal transition-all duration-300">
-                            Marksheet
-                        </a>
-                    </li>
+
                     <li>
                         <a href="#" class="text-white/70 hover:text-teal transition-all duration-300">
                             Contact
@@ -1492,22 +1505,22 @@
                 <!-- Social Icons -->
                 <div class="flex items-center gap-3">
                     <!-- Facebook -->
-                    <a href="#"
+                    <a href=" https://www.facebook.com/info.scarath"
                         class="h-9 w-9 rounded-full bg-white/10 hover:bg-teal flex items-center justify-center transition-all duration-300">
                         <ion-icon name="logo-facebook" class="text-base"></ion-icon>
                     </a>
                     <!-- Instagram -->
-                    <a href="#"
+                    <a href=" https://www.instagram.com/info.scarath/"
                         class="h-9 w-9 rounded-full bg-white/10 hover:bg-teal flex items-center justify-center transition-all duration-300">
                         <ion-icon name="logo-instagram" class="text-base"></ion-icon>
                     </a>
                     <!-- Youtube -->
-                    <a href="#"
+                    <a href="https://www.youtube.com/@sethchhoteylalacademy"
                         class="h-9 w-9 rounded-full bg-white/10 hover:bg-teal flex items-center justify-center transition-all duration-300">
                         <ion-icon name="logo-youtube" class="text-base"></ion-icon>
                     </a>
                     <!-- WhatsApp -->
-                    <a href="#"
+                    <a href="https://x.com/SCARATH_70583"
                         class="h-9 w-9 rounded-full bg-white/10 hover:bg-teal flex items-center justify-center transition-all duration-300">
                         <ion-icon name="logo-whatsapp" class="text-base"></ion-icon>
                     </a>
