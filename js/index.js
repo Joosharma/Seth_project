@@ -90,7 +90,7 @@ const newsSwiper = new Swiper(".newsSwiper", {
     delay: 0,
   },
   speed: 5000,
-  
+
   allowTouchMove: false,
 
   navigation: {
@@ -106,22 +106,17 @@ const tcContent = document.getElementById("tcContent");
 const mpdContent = document.getElementById("mpdContent");
 
 tcTab.addEventListener("click", () => {
+  tcContent.classList.remove("hidden");
+  mpdContent.classList.add("hidden");
 
-    tcContent.classList.remove("hidden");
-    mpdContent.classList.add("hidden");
-
-    tcTab.classList.add("bg-teal", "text-white");
-    mpdTab.classList.remove("bg-teal", "text-white");
-
+  tcTab.classList.add("bg-teal", "text-white");
+  mpdTab.classList.remove("bg-teal", "text-white");
 });
 
 mpdTab.addEventListener("click", () => {
+  mpdContent.classList.remove("hidden");
+  tcContent.classList.add("hidden");
 
-    mpdContent.classList.remove("hidden");
-    tcContent.classList.add("hidden");
-
-    mpdTab.classList.add("bg-teal", "text-white");
-    tcTab.classList.remove("bg-teal", "text-white");
-
+  mpdTab.classList.add("bg-teal", "text-white");
+  tcTab.classList.remove("bg-teal", "text-white");
 });
-
